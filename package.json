@@ -1,0 +1,25 @@
+{
+  "name": "cypress-appseng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "e2e:chrome": "cypress run --browser chrome  --spec cypress/e2e/ui-Testing",
+    "e2e:firefox": "cypress run --browser firefox  --spec cypress/e2e/ui-Testing",
+    "e2e:electron": "cypress run --browser electron  --spec cypress/e2e/ui-Testing",
+    "e2e:all": "npm run e2e:chrome && npm run e2e:firefox && npm run e2e:electron",
+    "e2e:api": "cypress run --browser chrome --spec cypress/e2e/api/**/*.cy.js"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.17.2",
+    "cypress": "^10.1.0",
+    "cypress-mochawesome-reporter": "^3.2.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "prettier": "^2.7.1"
+  }
+}

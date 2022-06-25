@@ -1,0 +1,7 @@
+{
+   "ADMIN_USER" :
+   {
+     "USERNAME": "Admin",
+     "PASSWORD": "admin123" 
+  }
+}

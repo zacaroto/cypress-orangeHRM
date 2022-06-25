@@ -1,0 +1,6 @@
+jenkins.war
+package-lock.json
+node_modules/
+ .prettierrc
+/cypress/reports
+.DS_Store
