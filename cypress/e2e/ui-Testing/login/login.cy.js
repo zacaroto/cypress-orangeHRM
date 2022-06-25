@@ -2,7 +2,7 @@ import loginPage from '../../../pageObjects/login/loginPage'
 import navBar from '../../../pageObjects/globalComponents/navBar/navBar'
 /// <reference types="Cypress" />
 
-describe('Login Spec', () => {
+describe('Login Tests', () => {
 	let data
 	before(function () {
 		cy.fixture('users').then(function (fdata) {

@@ -3,7 +3,7 @@ import loginPage from '../../../pageObjects/login/loginPage'
 
 /// <reference types="Cypress" />
 
-describe('Forgot Password Spec', () => {
+describe('Forgot Password Tests', () => {
 	let data
 	before(function () {
 		cy.fixture('users').then(function (fdata) {

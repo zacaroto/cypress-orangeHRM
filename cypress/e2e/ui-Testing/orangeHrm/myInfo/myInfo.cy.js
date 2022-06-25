@@ -4,7 +4,7 @@ import myInfoPage from '../../../../pageObjects/myinfo/myInfoPage'
 import utils from '../../../../support/utils'
 /// <reference types="Cypress" />
 
-describe('My Info Spec', () => {
+describe('My Info Tests', () => {
 	let data
 	before(function () {
 		cy.fixture('users').then(function (fdata) {
