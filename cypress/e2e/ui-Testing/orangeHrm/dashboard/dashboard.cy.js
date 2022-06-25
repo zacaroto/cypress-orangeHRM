@@ -3,7 +3,7 @@ import dashboardPage from '../../../../pageObjects/dashboard/dashboardPage'
 import navBar from '../../../../pageObjects/globalComponents/navBar/navBar'
 /// <reference types="Cypress" />
 
-describe('Dashboard Spec', () => {
+describe('Dashboard Tests', () => {
 	let data
 	before(function () {
 		cy.fixture('users').then(function (fdata) {
