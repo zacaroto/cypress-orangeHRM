@@ -14,7 +14,7 @@ describe('Dashboard Spec', () => {
 		loginPage.openApp()
 		loginPage.doLogin(data.ADMIN_USER.USERNAME, data.ADMIN_USER.PASSWORD)
 	})
-	it('Verify the dashboard elements', () => {
+	it('Verify the dashboard elements in page', () => {
 		navBar.verifyWelcomeLabelIsDisplayed()
 		dashboardPage.verifyDashboardButtons([
 			'Assign Leave',
