@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 describe('Characters API Tests', function () {
 	let access_token = ''
-	before('Generate Token', () => {
+	before('Generate Token -Signing Up', () => {
 		cy.request({
 			method: 'POST',
 			url: `https://the-one-api.dev/auth/login?email=kevinse@hotmail.com&password=Super`,
