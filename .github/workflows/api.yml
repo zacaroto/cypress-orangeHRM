@@ -1,0 +1,21 @@
+name: End-to-end tests
+on: [push]
+jobs:
+  Executing_API_Tests :
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v2
+       with:
+        persist-credentials: false
+
+     - name: Reconfigure git to use HTTP authentication
+       run: >
+        git config --global url."https://github.com/".insteadOf
+        ssh://git@github.com/
+     - name: Checkout
+       uses: actions/checkout@v2
+     - name: Setup npm package
+       run: npm init -y && npm install
+     - name: Running API Tests
+       run: npm run e2e:api
+
