@@ -15,4 +15,4 @@ jobs:
      - name: Setup npm package
        run: npm init -y && npm install
      - name: Setup npm package
-       run: npm run e2e:api
+       run: npm run e2e:all
