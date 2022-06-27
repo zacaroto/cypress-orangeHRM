@@ -2,11 +2,19 @@ name: cypress-tests
 on: [push]
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
-    steps:
+   runs-on: ubuntu-20.04
+   steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.2
-      - name: Cypress.io
-        uses: cypress-io/github-action@v4.1.1
+        uses: actions/checkout@v2
+
+      - name: Cypress info
+        uses: ./
         with:
+          # just for full picture after installing Cypress
+          # print information about detected browsers, etc
+          # see https://on.cypress.io/command-line#cypress-info
           build: npx cypress info
+          working-directory: Cypress-appsEng
+
+          
+          
