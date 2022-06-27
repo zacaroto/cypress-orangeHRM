@@ -11,4 +11,4 @@ jobs:
         with: 
           working-directory: Cypress-appsEng
           install-command: npm install
-          start: npm start
+          start: npm run e2e:api
