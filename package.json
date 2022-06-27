@@ -9,7 +9,8 @@
     "e2e:firefox": "cypress run --browser firefox  --spec cypress/e2e/ui-Testing",
     "e2e:electron": "cypress run --browser electron  --spec cypress/e2e/ui-Testing",
     "e2e:all": "npm run e2e:chrome && npm run e2e:firefox && npm run e2e:electron",
-    "e2e:api": "cypress run --browser chrome --spec cypress/e2e/api/**/*.cy.js"
+    "e2e:api": "cypress run --browser chrome --spec cypress/e2e/api/**/*.cy.js",
+    "start-jenkins-server" : "java -jar jenkins.war -httpPort=8080 --enable-future-java"
     
   },
   "author": "",
