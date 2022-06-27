@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
+    "start" : "cypress run --browser chrome --spec cypress/e2e/api/**/*.cy.js",
     "e2e:chrome": "cypress run --browser chrome  --spec cypress/e2e/ui-Testing",
     "e2e:firefox": "cypress run --browser firefox  --spec cypress/e2e/ui-Testing",
     "e2e:electron": "cypress run --browser electron  --spec cypress/e2e/ui-Testing",
