@@ -1,4 +1,4 @@
-name: End-to-end tests
+name: API Tests
 on: [push]
 jobs:
   Executing_API_Tests :
