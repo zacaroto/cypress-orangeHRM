@@ -14,5 +14,5 @@ jobs:
         ssh://git@github.com/
      - name: Setup npm package
        run: npm init -y && npm install
-     - name: Setup npm package
+     - name: Running e2e Tests
        run: npm run e2e:chrome
