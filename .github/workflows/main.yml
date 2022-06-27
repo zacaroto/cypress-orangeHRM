@@ -1,7 +1,7 @@
 name: End-to-end tests
 on: [push]
 jobs:
-  cypress-run:
+  Executing_UI_E2E_Tests :
     runs-on: ubuntu-20.04
     steps:
      - uses: actions/checkout@v2
