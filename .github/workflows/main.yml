@@ -4,9 +4,18 @@ jobs:
   cypress-run:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+     - uses: actions/checkout@v2
+       with:
+        persist-credentials: false
+
+     - name: Reconfigure git to use HTTP authentication
+       run: >
+        git config --global url."https://github.com/".insteadOf
+        ssh://git@github.com/
+
+     - name: Checkout
+       uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v4
+     - name: Cypress run
+       uses: cypress-io/github-action@v4
