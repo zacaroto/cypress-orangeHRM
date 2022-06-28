@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="LOTR" tests="5" time="4.986">
-  <testsuite name="Get Token" id="394888f7-42ea-4a15-a46d-80d7cf2c9fda" timestamp="2022-06-25T15:51:06.398Z" tests="0" failures="0" errors="0" time="0.795"/>
-  <testsuite name="LOTR_Movies" id="2270de1e-0d91-4da8-bbf8-c8fc590ff9b8" timestamp="2022-06-25T15:51:06.398Z" tests="3" failures="0" errors="0" time="0.218">
-    <testcase name="Status code is 200" time="0.218" classname="Lotr"/>
-    <testcase name="Response is json" time="0.218" classname="Lotr"/>
-    <testcase name="validating schema" time="0.218" classname="Lotr"/>
+<testsuites name="LOTR" tests="7" time="2.890">
+  <testsuite name="Get Token" id="394888f7-42ea-4a15-a46d-80d7cf2c9fda" timestamp="2022-06-28T16:31:10.430Z" tests="0" failures="0" errors="0" time="0.768"/>
+  <testsuite name="LOTR_Movies" id="2270de1e-0d91-4da8-bbf8-c8fc590ff9b8" timestamp="2022-06-28T16:31:10.430Z" tests="3" failures="0" errors="0" time="0.277">
+    <testcase name="Status code is 200" time="0.277" classname="Lotr"/>
+    <testcase name="Response is json" time="0.277" classname="Lotr"/>
+    <testcase name="validating schema" time="0.277" classname="Lotr"/>
   </testsuite>
-  <testsuite name="All_Characters" id="60ea6f21-ddf8-4c4c-b737-9f79539863fa" timestamp="2022-06-25T15:51:06.398Z" tests="3" failures="0" errors="0" time="3.506">
-    <testcase name="Status code is 200" time="3.506" classname="Lotr"/>
-    <testcase name="Response is json" time="3.506" classname="Lotr"/>
-    <testcase name="validating schema" time="3.506" classname="Lotr"/>
+  <testsuite name="Get_Movie_ByID" id="c922e098-f568-46ee-8f80-2456cbd19dcc" timestamp="2022-06-28T16:31:10.430Z" tests="3" failures="0" errors="0" time="0.229">
+    <testcase name="Status code is 200" time="0.229" classname="Lotr"/>
+    <testcase name="Response is json" time="0.229" classname="Lotr"/>
+    <testcase name="validating schema" time="0.229" classname="Lotr"/>
   </testsuite>
-  <testsuite name="CharacterById" id="eaf5d496-b4e6-4c01-a1fe-9609748b45e6" timestamp="2022-06-25T15:51:06.398Z" tests="3" failures="0" errors="0" time="0.235">
-    <testcase name="Status code is 200" time="0.235" classname="Lotr"/>
-    <testcase name="Response is json" time="0.235" classname="Lotr"/>
-    <testcase name="validating schema" time="0.235" classname="Lotr"/>
+  <testsuite name="All_Characters" id="60ea6f21-ddf8-4c4c-b737-9f79539863fa" timestamp="2022-06-28T16:31:10.430Z" tests="3" failures="0" errors="0" time="1.177">
+    <testcase name="Status code is 200" time="1.177" classname="Lotr"/>
+    <testcase name="Response is json" time="1.177" classname="Lotr"/>
+    <testcase name="validating schema" time="1.177" classname="Lotr"/>
   </testsuite>
-  <testsuite name="QuotesbyCharacterId" id="11f1d95d-9d62-450f-a134-45d45cb672af" timestamp="2022-06-25T15:51:06.398Z" tests="3" failures="0" errors="0" time="0.232">
-    <testcase name="Status code is 200" time="0.232" classname="Lotr"/>
-    <testcase name="Response is json" time="0.232" classname="Lotr"/>
-    <testcase name="validating schema" time="0.232" classname="Lotr"/>
+  <testsuite name="CharacterById" id="eaf5d496-b4e6-4c01-a1fe-9609748b45e6" timestamp="2022-06-28T16:31:10.430Z" tests="3" failures="0" errors="0" time="0.210">
+    <testcase name="Status code is 200" time="0.210" classname="Lotr"/>
+    <testcase name="Response is json" time="0.210" classname="Lotr"/>
+    <testcase name="validating schema" time="0.210" classname="Lotr"/>
+  </testsuite>
+  <testsuite name="QuotesbyCharacterId" id="11f1d95d-9d62-450f-a134-45d45cb672af" timestamp="2022-06-28T16:31:10.430Z" tests="3" failures="0" errors="0" time="0.229">
+    <testcase name="Status code is 200" time="0.229" classname="Lotr"/>
+    <testcase name="Response is json" time="0.229" classname="Lotr"/>
+    <testcase name="validating schema" time="0.229" classname="Lotr"/>
+  </testsuite>
+  <testsuite name="New Request" id="7af1e079-768b-406f-ba89-4d14b76bfb2c" timestamp="2022-06-28T16:31:10.430Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/postman-runtime/lib/requester/requester.js:382:26)
+    at /Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/postman-runtime/lib/runner/extensions/http-request.command.js:152:37
+    at Requester.create (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/postman-runtime/lib/requester/requester.js:469:16)
+    at RequesterPool.create (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/postman-runtime/lib/requester/requester-pool.js:67:22)
+    at /Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/postman-runtime/lib/runner/extensions/http-request.command.js:104:32
+    at /Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:251:13
+    at wrapper (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:271:20)
+    at replenish (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:441:29)
+    at /Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:451:13
+    at eachOfLimit$1 (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:477:34)
+    at awaitable (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:211:32)
+    at eachOfSeries (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:813:16)
+    at awaitable (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:211:32)
+    at _asyncMap (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:244:16)
+    at mapSeries (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:837:16)
+    at awaitable (/Users/kevin.santamaria/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Nodejs/lib/node_modules/newman/node_modules/async/dist/async.js:211:32)
+
+---
+]]></system-err>
   </testsuite>
 </testsuites>

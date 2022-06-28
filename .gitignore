@@ -4,3 +4,4 @@ node_modules/
  .prettierrc
 /cypress/reports
 .DS_Store
+/newman/myreport.xml
