@@ -1,5 +1,7 @@
 name: API Tests
-on: [push]
+on: 
+ pull_request:
+  branches: [ main ]
 jobs:
   Executing_API_Tests :
     runs-on: ubuntu-latest
