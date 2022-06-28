@@ -4,11 +4,14 @@ on:
   pull_request:
     branches:
     - main
+env:
+  DAY_OF_WEEK: Monday
 
 jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
+    - run: echo "Today is $DAY_OF_WEEK!"
     - uses: actions/checkout@master
     - uses: matt-ball/newman-action@master
       with:
