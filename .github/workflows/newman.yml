@@ -3,14 +3,11 @@ name: Newman Run
 on:
   pull_request:
     branches:
-    - main
-    
-    
+    - main    
 jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "The API key is:${{ secrets.NEWMAN_API_KEY }}"   
     - uses: actions/checkout@master
     - uses: matt-ball/newman-action@master
       with:
