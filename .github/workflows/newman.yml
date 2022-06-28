@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
     - main
+env:
+  API_KEY: ${{ secrets.API_KEY }}
 jobs:
   newman:
     runs-on: ubuntu-latest
@@ -12,5 +14,5 @@ jobs:
     - uses: actions/checkout@master
     - uses: matt-ball/newman-action@master
       with:
-         collection: https://api.getpostman.com/collections/17566207-08fe5e11-d87a-4cba-b0a5-500db416e90b?apikey=${{secrets.API_KEY}}
-         environment: https://api.getpostman.com/environments/17566207-b8402ef8-90b4-4791-a0a9-7093c7a56125?apikey=${{secrets.API_KEY}}
+         collection: https://api.getpostman.com/collections/17566207-08fe5e11-d87a-4cba-b0a5-500db416e90b?apikey=${{ secrets.API_KEY }}
+         environment: https://api.getpostman.com/environments/17566207-b8402ef8-90b4-4791-a0a9-7093c7a56125?apikey=${{ secrets.API_KEY }}
