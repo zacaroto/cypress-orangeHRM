@@ -9,7 +9,7 @@ describe('Login Tests', () => {
 			data = fdata
 		})
 	})
-	it('Verify the User is able to Log in ', () => {
+	it('Verify the User is able to Log in into the application ', () => {
 		loginPage.openApp()
 		loginPage.doLogin(data.ADMIN_USER.USERNAME, data.ADMIN_USER.PASSWORD)
 		navBar.verifyWelcomeLabelIsDisplayed()
