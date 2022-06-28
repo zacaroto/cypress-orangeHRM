@@ -5,11 +5,12 @@ on:
     branches:
     - main
     
+    
 jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Today is $DAY_OF_WEEK!"
+    - run: echo "The API key is:${{secrets.API_KEY}}"   
     - uses: actions/checkout@master
     - uses: matt-ball/newman-action@master
       with:
