@@ -31,4 +31,18 @@ describe('Movies API Tests', function () {
 			])
 		})
 	})
+	it('GET --- Characters Quotes by ID', () => {
+		const id = '5cd95395de30eff6ebccde5d'
+		const name = 'The Return of the King'
+		cy.request({
+			method: 'GET',
+			url: 'https://the-one-api.dev/v2/character/' + id,
+			headers: {
+				Authorization: 'Bearer ' + access_token,
+			},
+		}).then(function (response) {
+			expect(response.status).to.eq(200)
+			// expect(response.body[0].name).to.eql(name)
+		})
+	})
 })
