@@ -6,14 +6,6 @@ jobs:
   Executing_UI_E2E_Tests :
     runs-on: ubuntu-20.04
     steps:
-     - uses: actions/checkout@v2
-       with:
-        persist-credentials: false
-
-     - name: Reconfigure git to use HTTP authentication
-       run: >
-        git config --global url."https://github.com/".insteadOf
-        ssh://git@github.com/
      - name: Checkout
        uses: actions/checkout@v2
      - name: Setup npm package
