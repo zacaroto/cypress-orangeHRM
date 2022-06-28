@@ -17,9 +17,6 @@ describe('Forgot Password Tests', () => {
 	it('Verify warning message is displayed if the user tries to search with empty username', () => {
 		forgotPasswordPage.verifyEmptyUsernameMessage()
 	})
-	it('Verify confirmation message after sending a correct username', () => {
-		forgotPasswordPage.verifyConfirmationMessage('admin')
-	})
 
 	it('Verify Cancel fucntionality', () => {
 		forgotPasswordPage.verifyCancelFunctionality()
