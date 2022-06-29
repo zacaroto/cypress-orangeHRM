@@ -14,6 +14,19 @@ https://nodejs.org/es/download/
 ```bash
 npm install 
 ```
+## Project Structure 💻
+
+In this section you can find an explanation of the structure of the project and what we have on each folder.
+We are going to see some of the main folders one by one.
+
+| Folder/File          | Description                                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| cypress/fixtures         | Here you can find the static data stores (like usernames, test data, phone numbers, names, etc)                                              |
+| cypress/e2e/ui-testing       | This folder contains all the e2e UI-Testing specs    |
+| cypress/e2e/api       | This folder contains all the APi specs |
+| cypress/pageobjects/     | This folder contains the implementation where we declare locators and functions we are using in the spec files.                      |
+| cypress/support/ | This folder contains the implementation of the actions, assert and other utilities.               |
+
 
 ## 💻 GitHub Actions
 
