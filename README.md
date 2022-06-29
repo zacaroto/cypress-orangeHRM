@@ -27,6 +27,39 @@ We are going to see some of the main folders one by one.
 | cypress/pageobjects/     | This folder contains the implementation where we declare locators and functions we are using in the spec files.                      |
 | cypress/support/ | This folder contains the implementation of the actions, assert and other utilities.               |
 
+## 💻 Cypress Execution
+
+Within the following script you will start cypress locally 
+
+```shell script
+npm run test
+```
+
+Within the following script you will run the UI Testing specs on a specific browser (just change the browser's name: chrome, electron, firefox)
+
+```shell script
+
+npm run e2e:chrome
+npm run e2e:firefox
+npm run e2e:electron
+
+```
+Within the following script you will run the UI Testing specs on all the supported browsers at once
+
+```shell script
+
+npm run e2e:all
+
+```
+Within the following script you will run the API Testing specs on Chrome Browser
+
+```shell script
+
+npm run e2e:api
+
+```
+
+you can find all the scripts created on /package.json
 
 ## 💻 GitHub Actions
 
