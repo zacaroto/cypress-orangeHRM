@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-describe('Characters API Tests', function () {
+describe('Characters API Tests with Cypress', function () {
 	let access_token = ''
 	before('Generate Token -Signing Up', () => {
 		cy.request({
