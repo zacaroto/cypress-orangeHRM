@@ -27,7 +27,7 @@ describe('My Info Tests', () => {
 			utils.randomString(6),
 			utils.randomString(5),
 			utils.randomString(8),
-			'2022-09-26',
+			'2022-06-14',
 			utils.randomNationality()
 		)
 		myInfoPage.verifyUpdatedMessage()
